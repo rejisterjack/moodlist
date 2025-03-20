@@ -4,8 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moodlist</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="bg-dark text-white">
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Mood Tracker</h1>
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="card mb-4 bg-dark border-secondary">
+            <div class="card-body text-center">
+              <h5 class="card-title text-white">How are you feeling today?</h5>
+              <div class="d-flex justify-content-around my-3 gap-2">
+                <button
+                  class="btn btn-outline-primary btn-emoji w-25"
+                  data-mood="😊"
+                >
+                  😊 <span>Happy</span>
+                </button>
+                <button
+                  class="btn btn-outline-primary btn-emoji w-25"
+                  data-mood="😢"
+                >
+                  😢 <span>Sad</span>
+                </button>
+                <button
+                  class="btn btn-outline-primary btn-emoji w-25"
+                  data-mood="😐"
+                >
+                  😐 <span>Neutral</span>
+                </button>
+                <button
+                  class="btn btn-outline-primary btn-emoji w-25"
+                  data-mood="🎉"
+                >
+                  🎉 <span>Excited</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-dark border-secondary">
+            <div class="card-body">
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
